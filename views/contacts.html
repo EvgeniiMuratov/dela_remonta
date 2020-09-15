@@ -1,0 +1,39 @@
+<div class="page">
+
+    <div class="contacts-page">
+        <h1>Наши контакты</h3>
+            <div class="wrapper">
+                <div class="contacts-list">
+
+                    <p>Мы всегда рады помочь Вам и ответить на все Ваши вопросы. Мы внимательно относимся к каждому обращению и доступны для Вас круглосуточно. Вы можете связаться с нами удобным для Вас способом:
+
+                    </p>
+
+                    <span><b>Санкт-Петербург и Ленинградская область:</b></span> <br>
+                    <span>+7-911-764-62-07  </span><br><span> polart.salon@mail.ru</span><br>
+
+                    <span><b>Москва и московская область:</b></span><br>
+                    <span>+7-908-232-44-65 </span><br><span>dela-remonta@mail.ru</span>
+
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3480732375!2d36.82510434057748!3d55.58152436686093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1561901712746!5m2!1sru!2sby"
+                        width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <form id="feedback-form" action="http://localhost:3000/feedback" method="POST">
+                <h1>Форма обратной связи</h3>
+                    <input type="text" required="" placeholder="Ваше имя" name="name">
+                    <input type="email" placeholder="Email" name="email" required="">
+                    <input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон(+7-ххх-ххх-хх-хх)" name="phone">
+                    <textarea name="message" placeholder="Ваш вопрос" rows="10"></textarea>
+
+
+                    <button type="submit">ОТПРАВИТЬ</button>
+            </form>
+
+    </div>
+
+</div>

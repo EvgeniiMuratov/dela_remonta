@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Дела ремонта</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="wrap">
+            <a href="#main">Дела ремонта</a>
+            <ul class="topmenu">
+                <li> <a href="#about"> о компании</a></li>
+                <li> <a href="#buyer"> покупателю</a></li>
+                <li> <a href="#contacts"> контакты</a></li>
+
+            </ul>
+        </div>
+        <nav>
+
+            <ul class="menu">
+                <li> <a href="" onclick="return false">ламинат</a></li>
+                <li> <a href="#plastic.c">плинтус пластиковый</a></li>
+                <li> <a href="#mdf.c">плинтус мдф</a></li>
+                <li> <a href="#underlay.c">подложка под ламинат</a></li>
+                <li> <a href="#mixtures.c">сухие смеси</a></li>
+                <li class="cart">
+                    <a href="" onclick="return false">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="counter">0</div>
+                    </a>
+                </li>
+            </ul>
+            <div class="submenu">
+                <ul class="sbm">
+
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+
+    </div>
+    <div class="b-popup " id="popup1">
+        <div class="popup">
+
+            <div class="popup-header">
+                <span> <b> Корзина покупок</b></span>
+                <div class="popup-close"></div>
+            </div>
+
+            <div class="shopping-list">
+                <span>Корзина пуста :(</span>
+            </div>
+            <div class="total"></div>
+            <div class="popup-buttons">
+                <button id="resetCart">ОЧИСТИТЬ КОРЗИНУ</button>
+                <button id="placeAnOrder">ОФОРМИТЬ ЗАКАЗ</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="b-popup " id="popup2">
+        <div class="popup">
+
+            <div class="popup-header">
+                <span> <b>Оформление заказа</b></span>
+                <div class="popup-close"></div>
+            </div>
+
+            <form id="orderForm" action="http://localhost:3000/order" method="POST">
+                <input type="text" required="" placeholder="Фамилия Имя Отчество" name="name">
+                <input type="email" placeholder="Email" name="email" required="">
+                <input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон(+7-ххх-ххх-хх-хх)" name="phone">
+                <textarea name="address" placeholder="Адрес доставки" rows="5" required=""></textarea>
+
+            </form>
+
+            <div class="popup-buttons">
+                <button id="backward">НАЗАД</button>
+                <button form="orderForm" type="submit" id="sendOrder">ОТПРАВИТЬ</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <content class="content">
+
+    </content>
+
+    <footer class="footer">
+        <div class="wrap-footer">
+            <div class="links">
+                <h4>Мы в соцсетях:</h4>
+                <span>
+                    <a href="http://instagram.com"> <i class="fab fa-instagram"></i></a>
+                    <a href="http://vk.com"> <i class="fab fa-vk"></i></a>
+                </span>
+            </div>
+            <div class="contacts">
+                <h4>Остались вопросы?<br> Позвоните нам!</h4>
+                <p>+7-911-764-62-07</p>
+                <p>+7-908-232-44-65</p>
+            </div>
+        </div>
+        <div class="wrap-cprt">
+            <div class="copyright">
+                <p>© 2019, Дела ремонта. </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/javascripts/index.js"></script>
+</body>
+
+</html>
